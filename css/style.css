@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:700|Libre+Baskerville');
 
 
+.clearfix:after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+
 html{
   font-family: 'Merriweather Sans', sans-serif;
 }
@@ -151,6 +158,111 @@ section p{
    }
 
  }
+ /*****************************************************************************************   section SECOND   *****************************/
+
+.alt-section {
+  color: rgb(191, 161, 0);
+  background: rgb(241, 241, 241);
+}
+.alt-section h3{
+  padding-bottom: 40px;
+}
+.thumb-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+
+}
+.thumb-unit {
+  position: relative;
+  display: block;
+  float: left;
+  width: 25%;
+  padding-top: 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.thumb-unit:nth-child(1){
+  background: url('../img/img/01.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thumb-unit:nth-child(2){
+  background: url('../img/img/02.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thumb-unit:nth-child(3){
+  background: url('../img/img/03.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thumb-unit:nth-child(4){
+  background: url('../img/img/04.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thumb-unit:nth-child(5){
+  background: url('../img/img/05.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thumb-unit:nth-child(6){
+  background: url('../img/img/06.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thumb-unit:nth-child(7){
+  background: url('../img/img/07.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thumb-unit:nth-child(8){
+  background: url('../img/img/08.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thumb-overlay{
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(200, 168, 0, 0.63);
+
+  text-align: center;
+
+}
+.thumb-unit:hover .thumb-overlay{
+animation: doit .4s ease forwards;
+
+}
+.alt-section strong{
+  color: rgba(0, 0, 0, 0.84);
+  display: block;
+  color: white;
+  padding: 20px 20px 10px 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+.alt-section i{
+  font-size: 30px;
+  color: white;
+}
+
+
+@keyframes doit {
+  0% {
+    top: 100%;
+  }
+
+  100%{
+    top: 0%;
+
+  }
+}
 /*****************************************************************************************   footer    *****************************/
 
 
