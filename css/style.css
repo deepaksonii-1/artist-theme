@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:700|Libre+Baskerville');
+
+
+html{
+  font-family: 'Merriweather Sans', sans-serif;
+}
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*****************************************************************************************   header    *****************************/
+
+
+header{
+  height: 450px;
+  background: rgb(207, 207, 207);
+  background: url('../img/bg.jpg') center center;
+  background-size: cover;
+}
+header .logo{
+  float: left;
+  width: 50px;
+  height: 50px;
+  opacity: .7;
+  margin: 10px 0 0 10px;
+}
+header nav{
+  float: right;
+  margin: 30px 10px 0 0;
+}
+header nav a{
+  color: rgba(0, 0, 0, 0.79);
+    font-size: 13px;
+text-transform: uppercase;
+  padding-left: 20px;
+  text-decoration: none;
+}
+header nav a:hover{
+  text-decoration: underline;
+}
+header nav li{
+    display: inline-block;
+}
+
+header h1{
+  padding-top: 110px;
+  text-align: center;
+  clear: both;
+  font-weight: bolder;
+  font-size: 55px;
+  color: white;
+  margin-bottom: 35px;
+  letter-spacing: 3.5px;
+}
+header h1 span{
+  border: 10px solid white;
+  padding: 6px 20px;
+}
+header p{
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+ @media screen and (max-width: 650px){
+   header h1{
+     font-size: 35px;
+   }
+   header h1 span{
+     border: 7px solid white;
+   }
+ }
+
+/*****************************************************************************************   section    *****************************/
+
+section p{
+  font-family: 'Libre Baskerville', serif;
+}
+ section h3{
+   padding: 100px 0 30px 0;
+   color: rgb(213, 192, 5);
+   font-size: 14px;
+   text-align: center;
+ }
+ section .face-lock{
+   max-width: 780px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 0 auto;
+ }
+ section .face-lock .face{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   background: url('../img/self.png');
+ }
+
+   section [class*=icon-]{
+   width: 100px;
+   height: 100px;
+   background: rgba(0, 0, 0, 0.13);
+   border-radius: 50%;
+   position: relative;
+ }
+ section [class*=icon-] img{
+   width: 70px;
+   height: 70px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+ section [class*=icon-] img{
+   fill: red;
+ }
+ section .face{order: 3}
+ section .icon-1{ order: 1 }
+ section .icon-2{ order: 2 }
+ section .icon-3{ order: 4 }
+ section .icon-4{ order: 5 }
+ section .blurb{
+   max-width: 600px;
+   padding: 0 15px;
+   margin: 50px auto;
+   color: rgb(130, 130, 130);
+   line-height: 30px;
+   text-align: center;
+   font-weight: lighter;
+   font-size: 20px;
+
+ }
+ .blurb p strong{
+   color: rgb(97, 97, 97);
+ }
+ @media screen and (max-width: 650px){
+   section .face-lock{
+     display: block;
+     text-align: center;
+   }
+   section .face{
+     margin: 0 auto 30px auto;
+
+   }
+   section [class*=icon-]{
+     display: inline-block;
+
+   }
+
+ }
+/*****************************************************************************************   footer    *****************************/
+
+
+footer{
+  height: 150px;
+  background: rgb(207, 207, 207);
+  background: url('../img/bg.jpg') center center;
+  background-size: cover;
+  position: relative;
+  bottom: 0px;
+
+}
+
+footer .content{
+  position: absolute;
+  height: 50px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+footer .logo{
+  width: 50px;
+  height: 50px;
+  margin: 0 0 0 30px;
+  float: left;
+  opacity: 0.7;
+}
+footer .wrap{
+  float: left;
+  margin-left: 30px;
+}
+
+footer nav li{
+  display: inline-block;
+}
+footer nav li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 12px;
+}
+footer a:hover{
+  color: rgb(255, 255, 255);
+}
+footer p{
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.57);
+  margin-top: 4px;
+}
+footer p:hover{
+  color: rgb(255, 255, 255);
+}
